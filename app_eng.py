@@ -258,7 +258,7 @@ def main():
     st.title("Calculation of B Tanks Head Losses at Heat Pump Flow Rates")
     st.markdown("Enter the flow rate and choose the tank to display the head losses and the corresponding graph.")
 
-    st.image('Tableau_pac_2.jpg')
+    st.image('Tableau_pac_2.png')
 
     tank_flow_rate = st.slider(
         "Choose a Tank primary flow rate :",
