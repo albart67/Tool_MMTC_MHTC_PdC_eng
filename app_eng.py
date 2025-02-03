@@ -156,7 +156,7 @@ st.write(f"We are using the kinematic viscosity of water at 10°C: **{viscosity_
 
 def main():
     # PAC model selection
-    st.markdown('<p style="font-size:20px; margin-bottom: 0px; margin-top: 20px;"><strong>Choose a PAC model:</strong></p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:20px; margin-bottom: 0px; margin-top: 20px;"><strong>Choose a Heat Pump model:</strong></p>', unsafe_allow_html=True)
     model = st.selectbox("", data['model'])
 
     # Material selection
@@ -201,7 +201,7 @@ def main():
     elbows = st.selectbox("", [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 , 17, 18, 19, 20])
 
     # Additional head losses (balancing valve, coil tank, accidents,...(mCE))
-    st.markdown('<p style="font-size:20px; margin-bottom: 0px;margin-top: 20px;"><strong>Additional head losses (balancing valve, tank exchanger, elbows,...)(mCE)</strong></p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:20px; margin-bottom: 0px;margin-top: 20px;"><strong>Additional head losses (balancing valve, tank exchanger, elbows,...) in mCE</strong></p>', unsafe_allow_html=True)
 
     other_loss1 = st.number_input(".", min_value=0.0, step=0.1, key='other_loss1')
     other_loss2 = st.number_input(".", min_value=0.0, step=0.1, key='other_loss2')
@@ -255,13 +255,13 @@ def main():
     st.write("")
 
     # --- User interface ---
-    st.title("Calculation of B Tanks Head Losses at PAC Flow Rates")
+    st.title("Calculation of B Tanks Head Losses at Heat Pump Flow Rates")
     st.markdown("Enter the flow rate and choose the tank to display the head losses and the corresponding graph.")
 
     st.image('Tableau3.jpg')
 
     tank_flow_rate = st.slider(
-        "Choose a flow rate for the DHW tank:",
+        "Choose a Tank primary flow rate :",
         min_value = 0.0,
         max_value= 10.0,
         step=0.1,
