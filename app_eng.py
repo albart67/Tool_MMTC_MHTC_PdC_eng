@@ -210,7 +210,7 @@ def main():
     other_loss = other_loss1 + other_loss2 + other_loss3
 
     # Choice to deduct the static head loss
-    st.markdown('<p style="font-size:20px; margin-bottom: 0px;margin-top: 20px;"><strong>Deduction of the total theoretical head loss for each Heat Pump: Isolation Valve, Filter, Check Valve, T and Buffer Tank Flanges depending on the MMTC model:</strong></p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:20px; margin-bottom: 0px;margin-top: 20px;"><strong>Deduction of the total theoretical head loss for each Heat Pump: Isolation Valve, Filter, Check Valve, T and Buffer Tank Flanges depending on the model:</strong></p>', unsafe_allow_html=True)
     deduct_static_loss = st.checkbox("Deduct", value=True)
 
     total_static_loss = 0
