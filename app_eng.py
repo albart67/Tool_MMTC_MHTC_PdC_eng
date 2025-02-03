@@ -226,7 +226,7 @@ def main():
         static_loss = static_head_loss[model]
         total_static_loss = elbow_loss + static_loss + other_loss1 + other_loss2 + other_loss3
         st.write(f"Deducted static head loss: {static_loss} mCE")
-        st.image("Tableau_PdC2.png")
+        st.image("Tableau_pac_1.png")
     else:
         total_static_loss = elbow_loss + other_loss
 
@@ -258,7 +258,7 @@ def main():
     st.title("Calculation of B Tanks Head Losses at Heat Pump Flow Rates")
     st.markdown("Enter the flow rate and choose the tank to display the head losses and the corresponding graph.")
 
-    st.image('Tableau3.jpg')
+    st.image('Tableau_pac_2.jpg')
 
     tank_flow_rate = st.slider(
         "Choose a Tank primary flow rate :",
