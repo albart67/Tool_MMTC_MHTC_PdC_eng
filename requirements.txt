@@ -1,0 +1,5 @@
+streamlit
+numpy
+pandas
+scipy
+plotly==5.17.0
