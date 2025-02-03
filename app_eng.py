@@ -243,7 +243,7 @@ def main():
         st.write(f"The head loss per meter is {loss_per_meter:.3f} mCE/m")
 
         if possible_length > 0:
-            st.markdown(f"<div style='background-color: lightgreen; padding: 10px;'>The maximum round-trip pipe length is {possible_length:.2f} meters</div>", unsafe_allow_html=True)
+            st.markdown(f"<div style='background-color: lightgreen; padding: 10px;'>The maximum Pipe run back and forth length is {possible_length:.2f} meters</div>", unsafe_allow_html=True)
         else:
             st.markdown(f"<div style='background-color: red; padding: 10px;'>The head losses exceed the available head, no length is possible.</div>", unsafe_allow_html=True)
     else:
